@@ -6,7 +6,6 @@ from binance.client import Client
 from datetime import datetime
 from dateutil import parser
 import api
-import run
 
 ### API
 binance_api_key = api.pk    #Enter your own API-key here
@@ -16,8 +15,7 @@ binance_api_secret = api.sk #Enter your own API-secret here
 binsizes = {"1m": 1, "5m": 5, "1h": 60, "1d": 1440}
 batch_size = 750
 binance_client = Client(api_key=binance_api_key, api_secret=binance_api_secret)
-start_date = run.start_date
-
+start_date = '9 Feb 2021'
 
 ### FUNCTIONS
 def minutes_of_new_data(symbol, kline_size, data, source):
