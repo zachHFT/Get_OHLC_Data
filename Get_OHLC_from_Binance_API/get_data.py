@@ -15,7 +15,7 @@ binance_api_secret = api.sk #Enter your own API-secret here
 binsizes = {"1m": 1, "5m": 5, "1h": 60, "1d": 1440}
 batch_size = 750
 binance_client = Client(api_key=binance_api_key, api_secret=binance_api_secret)
-start_date = '9 Feb 2021'
+start_date = '9 Feb 2021' # When inserting start_date as a parameter of the below function I would run into an unexpected error which I haven't identified the cause yet.
 
 ### FUNCTIONS
 def minutes_of_new_data(symbol, kline_size, data, source):
